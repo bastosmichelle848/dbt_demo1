@@ -27,6 +27,13 @@
 - Apply this new query to a new model and put it in this way: “ models/newquery.sql” creating a new file with this path.
 - Paste your new query over there and save
 - Dbt run to materialize it into a big query
+- To change from view the table put this at the top of the query on dbt:  
+{{
+	config(
+	materialized ='table'
+	)
+}}
+
 
 
 
