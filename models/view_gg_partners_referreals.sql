@@ -3,7 +3,7 @@ DATE(TIMESTAMP_MICROS(CAST(CAST(p.created_at AS INT64)/1000000 as INT64))) AS cr
 DATE(TIMESTAMP_MICROS(CAST(CAST(p.updated_at AS INT64)/1000000 as INT64))) AS updated_at,
 p.partner_type,
 p.lead_sales_contact,
-s.string_field_1,
+s.string_field_1 AS country,
 r.status,
 
 CASE
