@@ -1,3 +1,5 @@
+{{ config( materialized ='table' ) }}
+
 SELECT 
 DATE(TIMESTAMP_MICROS(CAST(CAST(p.created_at AS INT64)/1000000 as INT64))) AS created_at,
 DATE(TIMESTAMP_MICROS(CAST(CAST(p.updated_at AS INT64)/1000000 as INT64))) AS updated_at,
