@@ -1,5 +1,5 @@
 
-### Next step (Big Query):
+### Next step (Big Query)
 - Create a new role and Keys into bigquery (Service Account) – These credentials are important to appoint to dbt which repo it has access
 - Biquery API (Enable it)
 - Create a dataset in your Project
@@ -19,7 +19,7 @@
 - Into dbt_project.yml change “name:” and put the same name in “models:” and materialize to “table instead of “view”
 - SAVE and  “dbt run”
 
-### Next step (Big Query):
+### Next step (Big Query)
 - Insert  your data into bigquery (CSV), and after transforming it
 - Save it inside your current dataset . Clique em “ Salvar resultados”,  Escolha “Tabela do BigQuery”, Selecione o  conjunto de dados do dbt e dê um nome para essa tabela
 - 
